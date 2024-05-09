@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class IfDice {
+public class DiceIf {
 	public static void main(String[] args) {
 		//주사위게임
 		//사용자와 컴퓨터가 주사위를 던져서 더 큰 수가 나오면 이기는 게임.

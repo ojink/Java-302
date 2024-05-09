@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class IfRockScissorsPaper {
+public class RockScissorsPaperIf {
 	public static void main(String[] args) {
 		Random r = new Random();
 		//가위바위보(RockScissorsPaper)

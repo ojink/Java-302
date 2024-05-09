@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Yut {
+public class YutIf {
 	public static void main(String[] args) {
 		//윷을 던져 그 결과를 출력하기
 		//앞:0, 뒤:1
