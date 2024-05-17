@@ -21,12 +21,11 @@ public class MethodEx04 {
 	}
 	
 	static int isTriple2(int no) {
-		//3으로 나눈 나머지가 0 : 배수      1, 2  
-		//8으로 나눈 나머지가 0 : 배수      1, 2, 3, 4, 5, 6, 7  
-//		String result ;
 		int mod = no %3;
 		return mod;
 	}
+	//3으로 나눈 나머지가 0 : 배수      1, 2  
+	//8으로 나눈 나머지가 0 : 배수      1, 2, 3, 4, 5, 6, 7  
 	
 	public static void main(String[] args) {
 //		어떤 수가 3의 배수인지 아닌지 판단하여 출력할 
