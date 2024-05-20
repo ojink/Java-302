@@ -55,34 +55,35 @@ public class VendingMachine {
 		//100원짜리 몇개
 		//50원짜리 몇개
 		if( change > 0 ) { //거스름돈이 있는 경우만 처리
-			int c1000=0, c500=0, c100=0, c50=0;
 			//메소드 호출로 변경하기
-			
-			//메소드 호출1
-			//메소드 호출2
-			//메소드 호출3
-			//메소드 호출4
-			
-			
-//			c1000 = change / 1000; //3000 - 1250 -> 1750 1000 1개
-//			change %= 1000; //change = change % 1000;  // 750
-//			if( c1000 > 0 ) System.out.printf("1000원 %d장 \n", c1000);
-//			
-//			c500 = change / 500; 
-//			change %= 500; // 250
-//			if( c500 > 0 ) System.out.printf("500원 %d개 \n", c500);
-//			
-//			c100 = change / 100;
-//			change %= 100; // 50
-//			if( c100 > 0 ) System.out.printf("100원 %d개 \n", c100);
-//			
-//			c50 = change / 50;
-//			change %= 50; // 
-//			if( c50 > 0 ) System.out.printf("50원 %d개 \n", c50);
+			change = calculateChange(change, 1000);
+			change = calculateChange(change, 500);
+			change = calculateChange(change, 100);
+			change = calculateChange(change, 50);
 		}
 	}
 	
 	//거스름돈 계산 메소드 선언
+	static int calculateChange(int change, int unit) {
+		int su = change / unit;
+		change %= unit; // 
+		if( su > 0 ) System.out.printf("%d원 %d개 \n", unit, su);
+		return change;
+	}
 	
-	
+//	c1000 = change / 1000; //3000 - 1250 -> 1750 1000 1개
+//	change %= 1000; //change = change % 1000;  // 750
+//	if( c1000 > 0 ) System.out.printf("1000원 %d장 \n", c1000);
+//	
+//	c500 = change / 500; 
+//	change %= 500; // 250
+//	if( c500 > 0 ) System.out.printf("500원 %d개 \n", c500);
+//	
+//	c100 = change / 100;
+//	change %= 100; // 50
+//	if( c100 > 0 ) System.out.printf("100원 %d개 \n", c100);
+//	
+//	c50 = change / 50;
+//	change %= 50; // 
+//	if( c50 > 0 ) System.out.printf("50원 %d개 \n", c50);
 }
