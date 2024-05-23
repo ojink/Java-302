@@ -38,7 +38,7 @@ public class GoodsStockMain {
 		goodsInfo( adidas );
 		
 		//가방 10개 출고하기
-		out = adidas.minusStock(10);
+		out = adidas.minusStock(30);
 		goodsInfo( adidas );
 		System.out.println( "출고된 수량: " + out );
 	}
