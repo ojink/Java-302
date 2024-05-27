@@ -3,7 +3,10 @@ package view;
 import java.util.Scanner;
 
 public class BoardMain {
+	
+	//DB라고 생각하자
 	static Board[] list = new Board[10];
+	static int seq; 
 	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -15,9 +18,10 @@ public class BoardMain {
 			
 			int menu = scan.nextInt();
 			if( menu == 1 ) {
-				new RegisterView(list, scan);
+				new RegisterView(scan);
 				
 			}else if( menu==2 ) {
+				new ListView();
 				
 			}else if( menu == 3 ) {
 				break;
