@@ -11,6 +11,6 @@ public class Accumulator {
 	
 	static int getGTotal() {
 		//객체만의 구성요소에는 접근 불가
-		return gTotal;
+		return gTotal; // + total;
 	}
 }
