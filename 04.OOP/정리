@@ -3,7 +3,12 @@ static 으로 선언한다
 클래스자신의 소유로 표현한다: 객체생성 없이 클래스명으로 접근 가능
 
 
+private < default < protected < public
+private : 선언된 클래스 내에서만 접근 가능
+default : 동일한 패키지내에서만 접근 가능
+public  : 패키지가 달라도 접근 가능
 
+DTO(Data Transfer Object)
 
 클래스의 구성요소: 필드(멤버변수), 메소드, 생성자
 객체사용
