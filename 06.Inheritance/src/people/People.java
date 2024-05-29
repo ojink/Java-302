@@ -1,5 +1,6 @@
 package people;
 
+//final 
 public class People {
 	//이름, 나이
 	String name;
