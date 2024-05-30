@@ -2,7 +2,12 @@ package animal;
 
 public class Animal {
 //	품종
-	String kind;
+	protected String kind;
+	
+	public Animal(){
+		
+	}
+	
 //	먹는다
 	void eat() {
 		System.out.println( kind+ " 먹는다");

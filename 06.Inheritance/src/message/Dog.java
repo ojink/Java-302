@@ -1,4 +1,6 @@
-package animal;
+package message;
+
+import animal.Animal;
 
 public class Dog extends Animal{
 
