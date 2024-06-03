@@ -76,6 +76,15 @@ class C extends B{
 }
 
 	
+데이터베이스와 연동하여 처리하는 경우
+DB 의 정보를 클래스 담아 사용 - DTO(Data Transfer Object)
+DB 와 관련된 처리(기능)에 사용 - DAO(Data Access Object)
+DAO - CRUD(Create, Read, Update, Delete)
+Create - insert
+Read - 목록 select, 한건 select
+Update - update 
+Delete - delete
+
 
 
 
