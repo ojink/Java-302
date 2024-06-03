@@ -16,7 +16,7 @@ public class DrinkListDAO extends DrinkManage implements DrinkDAO{
 		// .....
 		System.out.println("음료목록출력....");
 	}
-
+	public void search() {}
 	@Override
 	public void info() {}
 

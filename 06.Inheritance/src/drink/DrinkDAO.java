@@ -7,4 +7,5 @@ public interface DrinkDAO {
 	void info();    //김현준
 	void update();  //신명섭
 	void delete();  //이해진
+	void search();  //한신우
 }

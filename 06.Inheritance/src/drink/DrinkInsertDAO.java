@@ -14,7 +14,7 @@ public class DrinkInsertDAO extends DrinkManage implements DrinkDAO{
 		// .....
 		System.out.println("음료등록처리....");
 	}
-
+	public void search() {}
 	@Override
 	public void list() {}
 

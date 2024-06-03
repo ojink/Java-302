@@ -25,5 +25,5 @@ public class DrinkDeleteDAO extends DrinkManage implements DrinkDAO{
 		//.....
 		System.out.println("음료정보삭제....");
 	}
-
+	public void search() {}
 }

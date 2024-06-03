@@ -22,7 +22,7 @@ public class DrinkUpdateDAO extends DrinkManage implements DrinkDAO{
 		//.....
 		System.out.println("음료정보변경....");
 	}
-
+	public void search() {}
 	@Override
 	public void delete() {}
 

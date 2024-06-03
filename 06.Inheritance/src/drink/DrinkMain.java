@@ -14,13 +14,15 @@ public class DrinkMain { //한신우
 		DrinkDAO info = new DrinkInfoDAO( drinks, scan );
 		DrinkDAO update = new DrinkUpdateDAO( drinks, scan );
 		DrinkDAO delete = new DrinkDeleteDAO( drinks, scan );
+		DrinkDAO search = new DrinkSearchDAO( drinks, scan );
 		
 		System.out.println("음료관리 프로그램");
 		int button = 0;
 		do {
 			System.out.println("--------------------");
-			System.out.println("1.음료등록  2.음료목록보기  3.음료정보보기");
-			System.out.println("4.음료정보변경  5.음료정보삭제  0.종료");
+			System.out.println("1.음료등록     2.음료목록보기  3.음료정보보기");
+			System.out.println("4.음료정보변경  5.음료정보삭제  6.음료검색");
+			System.out.println("0.종료");
 			System.out.println("--------------------");
 			System.out.println("기능선택 : ");
 			button = scan.nextInt();
@@ -38,6 +40,8 @@ public class DrinkMain { //한신우
 			}else if ( button == 5 ) {
 				list.list();
 				delete.delete();
+			}else if ( button == 6 ) {
+				search.search();
 			}
 			
 		

@@ -2,9 +2,9 @@ package drink;
 
 import java.util.Scanner;
 
-public class DrinkInfoDAO extends DrinkManage implements DrinkDAO{
+public class DrinkSearchDAO extends DrinkManage implements DrinkDAO{
 	
-	DrinkInfoDAO(DrinkDTO[] drinks, Scanner scan){
+	DrinkSearchDAO(DrinkDTO[] drinks, Scanner scan){
 		super(drinks, scan);
 	}
 	
@@ -15,11 +15,12 @@ public class DrinkInfoDAO extends DrinkManage implements DrinkDAO{
 	public void list() {}
 
 	@Override
-	public void info() {
+	public void info() {}
+	
+	public void search() {
 		//......
-		System.out.println("음료정보출력....");
+		System.out.println("검색한 음료정보출력....");
 	}
-	public void search() {}
 	@Override
 	public void update() {}
 
