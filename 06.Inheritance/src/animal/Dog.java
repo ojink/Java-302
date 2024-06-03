@@ -2,11 +2,12 @@ package animal;
 
 public class Dog extends Animal{
 
-	public Dog(){
+	public Dog(String kind){
+		super(kind);
 	}
 	
+	void doWhat() {
 //	땅위를 달린다
-	void run() {
 		System.out.println(kind +" 달린다");
 	}
 }

@@ -2,16 +2,14 @@ package animal;
 
 public class AnimalMain {
 	public static void main(String[] args) {
-		Dog dog = new Dog();
-		dog.kind = "진도";
+		Dog dog = new Dog("진도");
 		dog.eat();
-		dog.run();
+		dog.doWhat();
 		dog.sleep();
 		
-		Bird bird = new Bird();
-		bird.kind = "비둘기";
+		Bird bird = new Bird("비둘기");
 		bird.eat();
-		bird.fly();
+		bird.doWhat();
 		bird.sleep();
 	}
 }
