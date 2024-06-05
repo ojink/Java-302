@@ -43,7 +43,7 @@ public class StringMethod {
 		System.out.println( phone.substring(phone.lastIndexOf("-")+1) ); //개인번호
 		System.out.println( phone.substring( 0, phone.indexOf("-") ) );  //지역번호
 		
-		phone = "062-1234-5678";
+		phone = "062-1234.5678";
 		String phones[] = phone.split("-"); //특정 구분자를 기준으로 문자열을 분리하기
 		for(String p : phones ) {
 			System.out.println(p);
