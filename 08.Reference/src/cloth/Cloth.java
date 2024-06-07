@@ -21,7 +21,9 @@ public class Cloth {
 		content.append("\t착용계절: ").append(season.getName());
         return content.toString();
     }
-	
+	public Cloth(){
+		
+	}
 	
 	Cloth(String code, String name
 			, String material, Season season){
