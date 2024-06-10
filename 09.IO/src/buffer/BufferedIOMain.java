@@ -33,9 +33,13 @@ public class BufferedIOMain {
 		try {
 			in = new BufferedInputStream( 
 					new FileInputStream(filename) );
-			while(true) {
-				byte data = (byte)in.read();
-				if( data == -1 ) break;
+//			while(true) {
+//				byte data = (byte)in.read();
+//				if( data == -1 ) break;
+//				System.out.println( data );
+//			}
+			byte data;
+			while( (data = (byte)in.read()) != -1 ) {
 				System.out.println( data );
 			}
 			
