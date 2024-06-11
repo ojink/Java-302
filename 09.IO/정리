@@ -31,7 +31,8 @@ DataInputStream / DataOutputStream
 파일 열는 기능을 가진 FileInputStream / FileOutputStream 과 함께 사용해야 한다
 
 
- 
+OS 입장에서는 폴더도 파일 중의 하나이다
+
 
  
 

@@ -1,5 +1,6 @@
 package student;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -11,10 +12,20 @@ public class StudentList {
 	}
 	
 	public void display() {
-		String htmlFile = "src/buffer/학생명단list.html";
+//		String htmlFile = "src/buffer/학생명단list.html";
+		
+		String folder = "d:/io/student";
+//		파일을 저장할 디렉토리(폴더)가 없다면 폴더를 만들어야 한다
+		File dir = new File( folder );
+		if( ! dir.exists() ) {
+			dir.mkdirs();
+		}
+			
+		String htmlFile = "/학생명단list.html";
+		
 		PrintWriter writer = null;
 		try {
-			writer = new PrintWriter( htmlFile );
+			writer = new PrintWriter( folder +  htmlFile );
 		
 			writer.print("<html>");
 			writer.print("<body>");
