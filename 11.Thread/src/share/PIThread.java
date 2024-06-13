@@ -17,6 +17,13 @@ public class PIThread extends Thread {
 		}
 		total *= 4;  //계산된 원주율값
 		share.pi = total; 
+		share.finished = true;
+		
+		//계산처리 다 했음을 알려주는 처리: notify
+		synchronized( share ) {
+			share.notifyAll();
+		}
+		
 		System.out.println("원주율 계산 완료");
 	}
 	
